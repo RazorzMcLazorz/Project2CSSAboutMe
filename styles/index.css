@@ -1,0 +1,87 @@
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+  background: url("../assets/mountainRange.jpg") no-repeat center center fixed;
+  font-size: 12px; 
+}
+
+.myName {
+  font-family: fantasy;
+  font-size: x-large;
+  text-decoration: underline;
+}
+
+.picture {
+  float: right;
+  width: 300px;
+  height: 500px;
+}
+
+h2 {
+  margin-top: 20px; 
+  margin-bottom: 5px;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+a:hover {
+  text-decoration-line: underline;
+}
+
+.poem {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.formatParagraph {
+  text-indent: 25px;
+  margin: 10px 0;
+}
+
+.nameSigned {
+  stroke-dasharray: 244;
+  stroke-dashoffset: 244;
+  animation: sign 4s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes sign {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.classSchedule {
+  border-color: #b610cc;
+  border-style: ridge;
+  border-width: 5px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.classScheduleTopHeaders > th {
+  border-bottom: 1px solid #6d0b7a;
+  background-color: transparent;
+}
+
+.classScheduleSideHeaders  {
+  border-right: 1px solid #6d0b7a;
+}
+
+th {
+  border-bottom: 1px dashed #6d0b7a;
+  background-color: rgba(149, 21, 175, 0.497);
+}
+
+th:empty {
+  background-color: transparent;
+}
+
+.floatingCenter {
+  margin: 40px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+}
